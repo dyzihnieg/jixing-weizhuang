@@ -1,0 +1,6 @@
+id=device_mask
+name=Device Mask
+version=2.1.1
+versionCode=11
+author=dyzihnieg
+description=Offline device identity profiles with companion APK auto-install. Optional screen query masking requires LSPosed. Reboot for global identity changes.

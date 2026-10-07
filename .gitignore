@@ -1,0 +1,67 @@
+# Gradle、Kotlin 与 Android 构建缓存
+.gradle/
+.gradle-user/
+.kotlin/
+build/
+.externalNativeBuild/
+.cxx/
+/captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# 本机环境配置、编辑器配置与系统文件
+local.properties
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 本地构建副本、历史备份、会话记录与发布产物
+/.build-ui/
+/.backup/
+/.operit/
+/dist/
+/device-mask-v*.zip
+
+# 保留可复用构建脚本，排除工具下载、缓存、日志和密钥
+/.build-tools/*
+!/.build-tools/Setup-AndroidEnv.ps1
+!/.build-tools/Verify-Ui.ps1
+!/.build-tools/Verify-Delivery.py
+!/.build-tools/Run-ModuleTests-Msys.py
+/tools/*-sources.jar
+
+# Python 缓存、虚拟环境与测试缓存
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 日志、临时文件和敏感配置
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.key
+*.pem
+keystore.properties
+.env
+.env.*
+!.env.example
+!.env.sample

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Device Mask</string>
+    <string name="module_description">Device identity and screen query masking, libxposed API 102</string>
+</resources>
