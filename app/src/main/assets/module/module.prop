@@ -1,6 +1,6 @@
 id=device_mask
-name=Device Mask
+name=机型伪装
 version=2.1.1
 versionCode=11
 author=dyzihnieg
-description=Offline device identity profiles with companion APK auto-install. Optional screen query masking requires LSPosed. Reboot for global identity changes.
+description=机型属性伪装与配套应用自动安装。处理器名称和屏幕信息伪装支持 LSPosed；全局属性修改后需重启。

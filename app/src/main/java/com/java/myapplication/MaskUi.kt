@@ -21,7 +21,7 @@ fun AppHeading(subtitle: String, onAppearance: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Column(Modifier.weight(1f)) {
-            Text("Device Mask", style = MaterialTheme.typography.headlineSmall)
+            Text("机型伪装", style = MaterialTheme.typography.headlineSmall)
             Text(subtitle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
         AppIconButton("外观设置", onClick = onAppearance) { Icon(Icons.Default.Settings, null) }

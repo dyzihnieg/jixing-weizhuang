@@ -29,5 +29,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "手机1机型伪装"
+rootProject.name = "机型伪装"
 include(":app")

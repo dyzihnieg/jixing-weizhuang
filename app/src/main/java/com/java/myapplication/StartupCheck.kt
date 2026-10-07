@@ -52,9 +52,9 @@ fun ScopeDialog(close: () -> Unit) {
                         modifier = Modifier.size(20.dp))
                     Text(r.error, color = MaterialTheme.colorScheme.error, modifier = Modifier.weight(1f))
                 }
-                !r.moduleFound -> StatusRow("LSPosed", "LSPosed 中未找到 Device Mask 模块", ready = false)
+                !r.moduleFound -> StatusRow("LSPosed", "LSPosed 中未找到机型伪装模块", ready = false)
                 else -> {
-                    StatusRow("Device Mask", if (r.moduleEnabled) "模块已启用" else "模块未启用", r.moduleEnabled)
+                    StatusRow("机型伪装", if (r.moduleEnabled) "模块已启用" else "模块未启用", r.moduleEnabled)
                     Text("API 102 不需要勾选控制 APK 自身", style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant)
                     if (r.targets.isEmpty()) StatusRow("目标应用", "未勾选任何目标应用", ready = false)
@@ -81,11 +81,11 @@ fun ScopeDialog(close: () -> Unit) {
             }
             HorizontalDivider()
             SectionHeading("授权说明")
-            Text("1. 自行打开 LSPosed 管理器，在模块列表启用 Device Mask。")
-            Text("2. 现代 API 不需要勾选 Device Mask 自身，只需勾选目标应用。")
+            Text("1. 自行打开 LSPosed 管理器，在模块列表启用机型伪装。")
+            Text("2. 现代 API 不需要勾选机型伪装自身，只需勾选目标应用。")
             Text("3. 勾选需要伪装的目标应用，例如微信、QQ 或检测软件。")
             Text("4. 不要勾选 Android 系统、系统界面、设置、桌面或 Root 管理器。")
-            Text("5. 修改后强制停止并重新打开 Device Mask 和目标应用，必要时重启手机。")
+            Text("5. 修改后强制停止并重新打开机型伪装和目标应用，必要时重启手机。")
             Text("结果来自 libxposed 官方 getScope()，不读取私有数据库。作用域已勾选不代表进程已重启加载。",
                 style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }

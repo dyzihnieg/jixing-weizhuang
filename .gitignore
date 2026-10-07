@@ -65,3 +65,11 @@ keystore.properties
 .env.*
 !.env.example
 !.env.sample
+
+# 仓库只保留使用说明和简短更新记录
+/BUILD_WINDOWS.md
+/DEVICE_MASK*.md
+/*_UI_CHANGES.md
+/UI_CHANGES.md
+/COOLAPK_DOCK_CHANGES.md
+/docs/superpowers/

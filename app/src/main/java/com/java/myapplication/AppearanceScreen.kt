@@ -442,7 +442,7 @@ private fun AppearancePreview(settings: AppearanceSettings) {
                     Icon(Icons.Default.Settings, null, tint = colors.onPrimaryContainer, modifier = Modifier.size(24.dp))
                 }
                 Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    Text("Device Mask", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                    Text("机型伪装", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
                     Text(description, style = MaterialTheme.typography.bodySmall, color = colors.onSurfaceVariant)
                 }
             }
